@@ -15,12 +15,12 @@ class QuizComponent extends Component {
       <React.Fragment>
         <h1>Quizzes</h1>
         {this.state.quizzes.map(quiz => (
-          <div className="card" style={{ border: "none" }}>
+          <div key={quiz.id} className="card" style={{ border: "none" }}>
             <div className="card-body">
-              <h5 className="card-title" style={{ "font-weight": "bold" }}>
+              <h5 className="card-title" style={{ fontWeight: "bold" }}>
                 <i
                   className="fa fa-hourglass-half"
-                  style={{ color: "#4eccc4", "margin-right": "5px" }}
+                  style={{ color: "#4eccc4", marginRight: "5px" }}
                 />
                 {quiz.title}
               </h5>

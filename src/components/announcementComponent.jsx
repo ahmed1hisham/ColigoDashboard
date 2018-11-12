@@ -31,12 +31,12 @@ class AnnouncementComponent extends Component {
         <span className="quote">We educate warriors! Keep updated!</span>
         <hr />
         <table
-          style={{ "table-layout": "fixed" }}
-          class="table table-borderless"
+          style={{ tableLayout: "fixed" }}
+          className="table table-borderless"
         >
           <tbody>
             {pageContent.map(item => (
-              <tr>
+              <tr key={item.id}>
                 <td colspan="1">
                   <img
                     src={defaultAvatar}
